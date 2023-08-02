@@ -1,0 +1,18 @@
+@use '../../lib/service.scss' as s;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: s.space(1);
+    gap: s.space(8);
+
+    &_title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: s.space(2);
+        border-bottom: 1px solid s.color('light');
+    }
+
+
+  
+}
