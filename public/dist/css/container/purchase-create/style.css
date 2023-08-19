@@ -1,0 +1,140 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading-title {
+  font-size: 32px;
+  color: #0d6efd;
+}
+
+.heading-info {
+  font-size: 24px;
+  color: #000;
+}
+
+.product-card {
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.product-card-image {
+  max-height: 300px;
+  width: 100%;
+}
+
+.product-card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-card-description {
+  font-size: 12px;
+  color: grey;
+}
+
+.product-card-caterory {
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+
+.product-card-caterory--1 {
+  border-color: blue;
+  color: blue;
+}
+
+.product-card-caterory--2 {
+  border-color: green;
+  color: green;
+}
+
+.product-card-button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+.product-card-button:hover {
+  opacity: 0.7;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.field-label {
+  font-size: 14px;
+}
+
+.field-input {
+  border: 1px solid grey;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.field--disabled {
+  position: absolute;
+  display: none;
+}
+
+.button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opasity 0.3s ease;
+}
+.button:hover {
+  opacity: 0.7;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  width: 1000px;
+  height: 800px;
+}
+
+.form-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.cart {
+  display: grid;
+  gap: 8px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */

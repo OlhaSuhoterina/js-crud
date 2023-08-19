@@ -1,0 +1,63 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-product/style.scss' as purchaseProduct;
+@use '../../component/field/style.scss' as field;
+@use '../../component/divider/style.scss' as divider;
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: s.space(10);
+    padding: s.space(10) ;
+    height: 1500px;
+    width: 1000px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding:s.space(8) ;
+    gap: s.space(2);
+    border: 1px solid s.color('light' )
+}
+.purchase-info{
+    display: flex;
+    flex-direction: column;
+    gap: s.space(2);
+    
+}
+.purchase-info-user{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: s.space(10);
+    padding: s.space(2);
+}
+
+
+.purchase-info-item-user{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.form-label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-input{
+    border: 1px solid s.color('light');
+    border-radius: 5px;
+    font-size: 16px;
+    padding: s.space(1) ;
+
+}
+
+.purchase-info-item{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+
+}
