@@ -1,0 +1,28 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+
+<div class="form">
+  <div class="card col-6">
+    <div class="card-body col-12">
+      <div class="action col-6">
+        <h1 class="card-title-alert">{{data.message}} </h1>
+        <strong> {{data.info}} </strong>
+
+      </div>
+      <div class="links col-6">
+        <a class="link-product btn btn-primary col-12" href="{{data.link}}">Повернутися назад</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+  Адже наш layout/default.hbs має вже структуру HTML
+  }}

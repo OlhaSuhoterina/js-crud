@@ -1,0 +1,82 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+<main class="main">
+  <form method="POST" action="/purchase-update?id={{id}}">
+
+    <div class="card">
+      {{> heading title="Змінa данних" }}
+
+      {{#with data}}
+
+
+      <div class="purchase-info">
+        <div class="purchase-info-item">
+          <span> ID: </span>
+          <strong>{{id}}</strong>
+
+
+
+        </div>
+        <div class="purchase-info-item">
+          <div class="purchase-info-user">
+
+            <div class="purchase-info-item-user">
+              <label for="name" class="form-label">Ім'я</label>
+              <input type="text" class="form-input" name="name" value='{{firstname}}'>
+            </div>
+
+            <div class="purchase-info-item-user">
+              <label for="name" class="form-label">Призвище</label>
+              <input type="text" class="form-input" name="name" value='{{lastname}}'>
+            </div>
+          </div>
+
+          <div class="purchase-info-user">
+            <div class="purchase-info-item-user">
+              <label for="name" class="form-label">Телефон:</label>
+              <input type="text" class="form-input" name="name" value='{{phone}}'>
+
+            </div>
+            <div class="purchase-info-item-user">
+              <label for="name" class="form-label">Email</label>
+              <input type="text" class="form-input" name="name" value='{{email}}'>
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <button class="btn btn-primary">Зберегти зміни</button>
+      {{/with}}
+
+    </div>
+
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+  Адже наш layout/default.hbs має вже структуру HTML
+  }}
